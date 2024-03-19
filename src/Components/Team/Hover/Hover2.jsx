@@ -1,13 +1,13 @@
 import React from 'react';
 import './Hover2.scss';
-import img1 from '../Assets/img.jpg';
+// import img1 from '../Assets/img.jpg';
 
 const Hover = React.memo((props) => {
   return (
     <div className='containe'>
       <div className="card__collection clear-fix">
         <div className="cards cards--three">
-          <img src={img1} className="img-responsive" alt=""/>
+          {/* <img src={img1} className="img-responsive" alt=""/> */}
           <span className="cards--three__rect-1">
             <span className="shadow-1"></span>
             <p>{props.name}</p>

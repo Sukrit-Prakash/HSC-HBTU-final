@@ -6,6 +6,7 @@ import Hover2 from './Hover/Hover2';
 import Navbar from '../Navbar/Navbar';
 import Footer2 from '../Footer/Footer2';
 import teamMembers from './Assets/all_product';
+import Hover from './Hover/Hover2';
 
 // const teamMembers = lazy(() => import ('./Assets/all_product')) ;
 // const Footer2= lazy(() => import ('../Footer/Footer2')) ;
@@ -29,7 +30,15 @@ const Team = () => {
 
   return (
     <>
-      <div className='team-container'>
+    <div className='team-container'>
+      <div className="team-section">
+        <h2>Co-Ordinator</h2>
+        <div className='card-container'> 
+        <div className='card-wrapper'>
+          <Hover name="name3" role="3rd EE"/>
+          </div></div>
+      </div>
+      
         <h1>Meet Our Teams</h1>
         {Object.entries(teamMembers).map(([teamName, members]) => 
           renderTeamSection(teamName, members)

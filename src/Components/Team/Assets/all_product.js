@@ -1,4 +1,23 @@
+import mam from './photo/1.jpeg';
+import harshsir  from './photo/4.jpeg';
+import mohitsir  from './photo/3.jpeg';
+
+
 const teamMembers = {
+  
+  Convener:[
+     {
+      id:1, name:'name',roll:'3rd EE'
+     }
+  ],  
+  "Co-Secretaries":[
+{
+  id:1,name:'name1',roll:'3rd EE'
+},
+{
+  id:2,name:'name2',roll:'3rd EE'
+}
+  ],           
   // Logistics: [
   //   { id: 1, name: 'Divyansh Verma', roll: '3rd BE',instagram:'' },
   //   { id: 2, name: 'Jatin Kaushik', roll: '3rd CHE' },
