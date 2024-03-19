@@ -21,7 +21,7 @@ const Team = () => {
       <div className="card-container">
         {teamMembers.map((item) => (
           <div key={item.id} className="card-wrapper">
-            <Hover2 id={item.id} name={item.name} role={item.roll} />
+            <Hover2 instagram={item.instagram} linkedin={item.linkedin} img={item.img} id={item.id} name={item.name} role={item.roll} />
           </div>
         ))}
       </div>
@@ -31,14 +31,6 @@ const Team = () => {
   return (
     <>
     <div className='team-container'>
-      <div className="team-section">
-        <h2>Co-Ordinator</h2>
-        <div className='card-container'> 
-        <div className='card-wrapper'>
-          <Hover name="name3" role="3rd EE"/>
-          </div></div>
-      </div>
-      
         <h1>Meet Our Teams</h1>
         {Object.entries(teamMembers).map(([teamName, members]) => 
           renderTeamSection(teamName, members)
